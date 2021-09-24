@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Under Construction</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Assistant:300,400&display=swap');
+
+*,
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Assistant', sans-serif;
+	font-weight: 300;
+}
+
+.main {
+	position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('/assets/background.jpg');
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 1.5;
+	letter-spacing: 10px;
+	color: white;
+}
+
+.wrapper {
+	color: white;
+	border: 5px solid white;
+	padding: 6rem 8rem;
+	width: 53%;
+	text-align: center;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.text {
+	width: 80%;
+	margin: 3rem auto;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.progress-bar-container {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.percentage-wrapper {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.progress-bar {
+	position: relative;
+	margin: .3rem 0;
+	background-color: #396cbe;
+	width: 130%;
+	height: 10px;
+}
+
+.progress-bar--inner {
+	position: relative;
+	z-index: 10;
+	width: 70%;
+	height: 10px;
+	background-color: #eee;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1610px) {
+	.title {
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width: 1560px) {
+	.text {
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (max-width: 1500px) {
+	.text {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1295px) {
+	.wrapper {
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 1145px) {
+	.wrapper {
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 985px) {
+	.title {
+		font-size: 2.3rem;
+	}
+
+	.text {
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen and (max-width: 935px) {
+	.wrapper {
+		padding: 4rem 6rem;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.wrapper {
+		padding: 3rem 5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		width: 88%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.wrapper {
+		padding: 3rem 4rem;
+	}
+}
+
+@media only screen and (max-width: 452px) {
+	.wrapper {
+		width: 95%;
+		padding: 3rem 2rem;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.title {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+	.progress-bar-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.percentage-wrapper {
+		width: 80%;
+	}
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+                <h1 class="title">We are building something amazing!</h1>
+                <p class="text">Come back in a while and you'll see!</p>
+                <div class="percentage-wrapper">
+                        <span>0%</span>
+                        <span>100%</span>
+                </div>
+                
+                <div class="progress-bar-container">        
+                    <div class="progress-bar"></div>
+                    <div class="progress-bar--inner"></div>
+                </div>
+                
+        </div>
+        
+    </div>
+</body>
+</html>
